@@ -1,4 +1,4 @@
-# 📝 WebSocket-Powered Kanban Board - Candidate Guide
+# 📝 WebSocket-Powered Kanban Board 
 
 ## 📌 Project Overview
 
