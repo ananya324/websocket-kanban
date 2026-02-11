@@ -184,11 +184,4 @@ Additional UI Features:
 
 ---
 
-## 🚀 Next Steps for Candidates
 
-🎯 Implement **WebSocket logic** in the Kanban board  
-🎯 Add **state management** for tasks  
-🎯 Write **unit, integration, and E2E tests**  
-🎯 Deploy and verify real-time updates
-
-🛠 **Final Tip:** Pay attention to **code quality, real-time interactions, and testing coverage**. Good luck! 🚀
