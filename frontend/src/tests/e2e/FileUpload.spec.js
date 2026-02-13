@@ -8,20 +8,15 @@ const __dirname = path.dirname(__filename);
 test("User can upload a valid image file", async ({ page }) => {
   await page.goto("http://localhost:3000");
 
-  // Reset backend state
   await page.request.post("http://localhost:5000/__test__/reset");
 
-  // Add a task
   await page.getByRole("button", { name: "Add Task" }).click();
 
-  // Locate file input
   const fileInput = page.locator('input[type="file"]').first();
 
-  // Upload a valid image
   const filePath = path.resolve(__dirname, "../fixtures/test-image.png");
   await fileInput.setInputFiles(filePath);
 
-  // Assert image preview is visible
   const imagePreview = page.locator('img');
   await expect(imagePreview).toBeVisible();
 });
@@ -46,7 +41,6 @@ test("Invalid file type shows an error alert", async ({ page }) => {
 
   await page.getByRole("button", { name: "Add Task" }).click();
 
-  // Listen for alert
   page.once("dialog", async (dialog) => {
     expect(dialog.message()).toBe("Unsupported file type");
     await dialog.dismiss();
