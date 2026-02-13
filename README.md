@@ -44,13 +44,25 @@ https://websocket-kanban-sigma.vercel.app/
 
 ---
 
-## 📦 Project Structure
-backend/
-├── server.js
-├── routes/
-├── package.json
-
-frontend/
-├── src/
-├── tests/
-├── package.json
+websocket-kanban/
+│
+├── backend/
+│   ├── server.js
+│   ├── routes/
+│   │   └── tasks.js
+│   ├── uploads/
+│   └── package.json
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── services/
+│   │   ├── tests/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── public/
+│   └── package.json
+│
+├── README.md
+└── package.json (if root-level exists)
