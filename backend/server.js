@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
 
 let tasks = [];
-// 🔹 Test-only reset endpoint (for Playwright)
+
 app.post("/__test__/reset", (req, res) => {
   tasks = [];
   res.sendStatus(200);
@@ -48,7 +48,7 @@ io.on("connection", (socket) => {
     io.emit("sync:tasks", tasks);
   });
 
-  // ✅ ADD THIS HERE (test-only helper)
+
   socket.on("tasks:reset", () => {
     tasks = [];
     io.emit("sync:tasks", tasks);
