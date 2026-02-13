@@ -44,6 +44,9 @@ https://websocket-kanban-sigma.vercel.app/
 
 ---
 
+## 📂 Project Structure
+
+```bash
 websocket-kanban/
 │
 ├── backend/
@@ -65,5 +68,7 @@ websocket-kanban/
 │   └── package.json
 │
 ├── README.md
-└── package.json (if root-level exists)
+└── package.json
+```
+
 
