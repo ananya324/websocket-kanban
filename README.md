@@ -66,3 +66,4 @@ websocket-kanban/
 │
 ├── README.md
 └── package.json (if root-level exists)
+
