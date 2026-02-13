@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
 
-const SOCKET_URL = "http://localhost:5000";
+const SOCKET_URL = "https://websocket-kanban-3fte.onrender.com";
 
 function KanbanBoard({ socketProp, onDragEndTest }) {
   const [tasks, setTasks] = useState([]);
